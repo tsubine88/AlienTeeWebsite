@@ -1,0 +1,187 @@
+/* root variables */
+:root {
+    --color-primary: #E6AF2E;
+    --color-success: rgb(61, 151, 61);
+    --color-warning: rgb(230, 230, 25);
+    --color-danger: rgb(224, 64, 24);
+    --color-danger-variant: rgba(247, 20, 20, 0.781);
+    --color-white: white;
+    --color-light: rgb(209, 204, 204);
+    --color-black: black;
+    --color-bg: #191716;
+    --color-bg1: #E6AF2E;
+    --color-bg2: #E0E2DB;
+    --color-bg3: #5AA9E6;
+    --color-bg4: #BEB7A4;  
+    --color-bg5: #FF6392;  
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+
+.contact__container {
+    background: var(--color-bg1);
+    border: black solid;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+     
+}
+
+
+/* aside */
+
+.contact__aside {
+    background: var(--color-primary);
+    border: var(--color-bg) solid;
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+    
+}
+
+.contact__aside h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+
+
+}
+
+.contact__aside p {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.contact__details li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+.aside__image {
+    width: 11rem;
+    height: 11rem;
+    align-items: center;
+    margin-left: 5rem;
+}
+.contact__socials {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+
+.contact__socials a {
+    background: var(--color-bg);
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.contact__socials a:hover {
+    background: transparent;
+}
+
+/* Form */
+
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+
+.form__name {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.contact__form input[type="text"] {
+    width: 50%;
+}
+
+input, 
+textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+.contact__form .btn {
+    width: max-content;
+    margin-top: 1rem;
+    cursor: pointer;
+    min-width: 100%;  
+/* aici se intampla ceva ciudat si nu imi dau seama exact din ce motiv */
+}
+
+
+/* media queries for tablets */
+
+@media screen and (max-width: 1024px) {
+    .contact {
+        padding-bottom: 0;
+    }
+    
+    .contact__container {
+        gap: 1.5rem;
+        margin-top: 3rem;
+        height: auto ;
+        padding: 1.5rem;
+    }
+    .contact__aside {
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+    .contact__form {
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+
+}
+
+
+
+
+/* media queries 4 phones */
+
+
+@media  screen and (max-width: 600px) {
+    /* body {
+        display: none;
+    } */
+    .contact__container {
+        grid-template-columns: 1fr;     
+        /* lectia zilei: 50% nu e acelasi lucru cu 1fr cand setezi grid template columns */
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+    .contact__form {
+        margin: 0 1.5rem 3rem;
+    }
+
+    .form__name {
+        flex-direction: column;
+
+    }
+
+    .form__name input[type="text"] {
+        width: 100%;
+    }
+
+}
