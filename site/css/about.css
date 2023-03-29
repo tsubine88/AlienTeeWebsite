@@ -50,6 +50,9 @@
 .about__achievements-left {
     margin-top: 8rem;
 }
+.about__achievements-left img {
+    margin-top: 5rem;
+}
 .achievements__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
