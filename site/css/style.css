@@ -416,6 +416,9 @@ footer {
     margin: 0 0 2rem;
 
 }
+.footer__1 h4 {
+    text-align: center;
+}
 
 footer ul li {
     margin-bottom: 0.7rem;
@@ -437,7 +440,7 @@ footer ul li a:hover {
     text-align: center;
     margin-top: 4rem;
     padding: 1.2rem;
-    border-top: 1px solid var(--color-bg1);
+    border-top: 1px solid var(--color-bg);
 }
 
 

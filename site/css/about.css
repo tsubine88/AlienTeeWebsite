@@ -162,7 +162,13 @@ background: var(--color-bg3);
     padding: 1rem;
 
 }
-
+/* footer */
+.footer__copyrights {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem;
+    border-top: 1px solid var(--color-bg5);
+}
 
 /* media queries */
 /* tablets */
@@ -213,6 +219,9 @@ background: var(--color-bg3);
     }
 }
 
+.empty {
+    padding: 1rem;
+}
 
 
 

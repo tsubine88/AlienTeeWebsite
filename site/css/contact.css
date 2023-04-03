@@ -127,7 +127,13 @@ textarea {
     min-width: 100%;  
 /* aici se intampla ceva ciudat si nu imi dau seama exact din ce motiv */
 }
-
+/* footer */
+.footer__copyright {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem;
+    border-top: 1px solid var(--color-bg);
+}
 
 /* media queries for tablets */
 
