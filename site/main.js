@@ -48,3 +48,19 @@ const closeNav = () => {
 }
 
 closeBtn.addEventListener('click', closeNav)
+
+// expandable images
+
+const expandableImages = document.querySelectorAll(".expandable-image");
+
+expandableImages.forEach(function(expandableImage) {
+    expandableImage.addEventListener("click", function() {
+        const originalSrc = expandableImage.src;
+
+        // Create a new window with the original size of the image
+        const popupWindow = window.open(originalSrc, "popupWindow", "width=" + expandableImage.naturalWidth + ", height=" + expandableImage.naturalHeight + ", top=" + ((window.innerHeight - expandableImage.naturalHeight) / 2) + ", left=" + ((window.innerWidth - expandableImage.naturalWidth) / 2));
+
+        // Focus the new window
+        popupWindow.focus();
+    });
+});

@@ -31,7 +31,7 @@
     grid-template-columns: 40% 60%;
     gap: 4rem;
     height: 30rem;
-    margin: 7rem auto;
+    margin: 15rem auto;
     border-radius: 1rem;
      
 }
@@ -153,6 +153,7 @@ textarea {
         padding: 1.5rem;
         bottom: 0;
     }
+
     .contact__form {
         align-self: center;
         margin-right: 1.5rem;

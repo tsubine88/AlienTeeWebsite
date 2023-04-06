@@ -122,14 +122,19 @@
 
 }
 
+
 .team__member:hover {
     background: transparent;
     border-color: var(--color-primary);
 
 }
+.expandable-image:hover {
+        cursor: pointer;
+    }
 
 .team__member-image img {
     filter: saturate(0);
+    
 }
 
 .team__member:hover img {

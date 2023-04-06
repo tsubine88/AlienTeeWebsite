@@ -167,7 +167,7 @@ nav button {
 
 header {
     position: relative;
-    top: 5rem;
+    top: 15rem;
     overflow: hidden;
     height: 70vh;
     margin-bottom: 10rem;
@@ -184,7 +184,10 @@ header {
 .header__left {
     margin-bottom: 10rem;
 }
-
+.header__left h1 {
+    text-align: center;
+    gap: 3rem;
+}
 .header__left p {
     margin: 1rem 0 1rem;
     color: var(--color-bg1);

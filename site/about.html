@@ -9,6 +9,7 @@
     <!-- style css -->
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./main.js" defer>
 
     <!-- iCON scout CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -18,7 +19,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="./favicon/favicon.png">
 </head>
 
 <body>
@@ -239,7 +241,7 @@
 
             <article class="team__member">
                 <div class="team__member-image">
-                    <img src="./images/AlienTeeS/Daddy1.png">
+                    <img class="expandable-image" src="./images/AlienTeeS/Daddy1.png">
                 </div>
                 <div class="team__member-info">
                     <h4>NachoD ATS 19.11$</h4>
@@ -249,7 +251,7 @@
 
             <article class="team__member">
                 <div class="team__member-image">
-                    <img src="./images/AlienTeeS/Veni Vidi Vicii (2).png">
+                    <img class="expandable-image" src="./images/AlienTeeS/Veni Vidi Vicii (2).png">
                 </div>
                 <div class="team__member-info">
                     <h4>VVVVariant ATS 19.11$</h4>
@@ -258,7 +260,7 @@
             </article>
             <article class="team__member">
                 <div class="team__member-image">
-                    <img src="./images/AlienTeeS/dON'T BE SILLY!.png">
+                    <img class="expandable-image" src="./images/AlienTeeS/dON'T BE SILLY!.png">
                 </div>
                 <div class="team__member-info">
                     <h4>Don't be Silly ATS 19.11$</h4>
@@ -267,7 +269,7 @@
             </article>
             <article class="team__member">
                 <div class="team__member-image">
-                    <img src="./images/AlienTeeS/Cosmic Octo Heavy.png">
+                    <img class="expandable-image" src="./images/AlienTeeS/Cosmic Octo Heavy.png">
                 </div>
                 <div class="team__member-info">
                     <h4>AGAR ATS 19.11$</h4>
@@ -276,7 +278,7 @@
             </article>
             <article class="team__member">
                 <div class="team__member-image">
-                    <img src="./images/AlienTeeS/Your paragraph text (1).png">
+                    <img class="expandable-image" src="./images/AlienTeeS/Your paragraph text (1).png">
                 </div>
                 <div class="team__member-info">
                     <h4>Puccini&Porcini ATS 19.11$</h4>
@@ -285,7 +287,7 @@
             </article>
             <article class="team__member">
                 <div class="team__member-image">
-                    <img src="./images/AlienTeeS/tataCui.png">
+                    <img class="expandable-image" src="./images/AlienTeeS/tataCui.png">
                 </div>
                 <div class="team__member-info">
                     <h4>TataCui ATS 19.11$</h4>
@@ -294,7 +296,7 @@
             </article>
             <article class="team__member">
                 <div class="team__member-image">
-                    <img src="./images/AlienTeeS/Te tai!.png">
+                    <img class="expandable-image" src="./images/AlienTeeS/Te tai!.png">
                 </div>
                 <div class="team__member-info">
                     <h4>TeTai ATS 19.11$</h4>
@@ -303,7 +305,7 @@
             </article>
             <article class="team__member">
                 <div class="team__member-image">
-                    <img src="./images/AlienTeeS/Phoenix Square.png">
+                    <img class="expandable-image" src="./images/AlienTeeS/Phoenix Square.png">
                 </div>
                 <div class="team__member-info">
                     <h4>cEnPMvREIdElAmINE ATS 19.11$</h4>
@@ -381,6 +383,34 @@
     <!-- end of footer -->
 
     <script src="./main.js"></script>
+    <!-- <script>
+        const expandableImage = document.getElementById("expandable-image");
+    
+        expandableImage.addEventListener("click", function() {
+            if (expandableImage.style.width === "100%") {
+                expandableImage.style.width = "130%";
+                
+                expandableImage.style.cursor = "zoom-out";
+                
+            } else {
+                expandableImage.style.width = "100%";
+                expandableImage.style.cursor = "zoom-in";
+            }
+        });
+    </script> -->
+    <!-- <script>
+        const expandableImage = document.getElementById("expandable-image");
+    
+        expandableImage.addEventListener("click", function() {
+            const originalSrc = expandableImage.src;
+    
+            // Create a new window with the original size of the image
+            const popupWindow = window.open(originalSrc, "popupWindow", "width=" + expandableImage.naturalWidth + ", height=" + expandableImage.naturalHeight + ", top=" + ((window.innerHeight - expandableImage.naturalHeight) / 2) + ", left=" + ((window.innerWidth - expandableImage.naturalWidth) / 2));
+    
+            // Focus the new window
+            popupWindow.focus();
+        });
+    </script> -->
 
 
 
