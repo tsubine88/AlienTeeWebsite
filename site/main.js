@@ -64,3 +64,4 @@ expandableImages.forEach(function(expandableImage) {
         popupWindow.focus();
     });
 });
+
