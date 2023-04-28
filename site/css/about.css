@@ -93,6 +93,15 @@
 .achievements__card:nth-child(3) .achievements__icon {
     background: var(--color-bg5);
 }
+.achievements__card:nth-child(4) .achievements__icon {
+    background: greenyellow;
+}
+.achievements__card:nth-child(5) .achievements__icon {
+    background: purple;
+}
+.achievements__card:nth-child(6) .achievements__icon {
+    background: blueviolet;
+}
 
 .achievements__card p {
     margin-top: 1rem;
