@@ -76,7 +76,55 @@
                     </li>
                 </ul>
             </aside>
+        
 
+            <form action="../backEnd/connect.php" method="post">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+        
+                <label for="priority">Priority</label>
+                <select id="priority" name="priority">
+                    <option value="1">Low</option>
+                    <option value="2" selected>Medium</option>
+                    <option value="3">High</option>
+                </select>
+        
+                <fieldset>
+                    <legend>Type</legend>
+        
+                    <label>
+                        <input type="radio" name="type" value="1" checked>
+                        Complaint
+                    </label>
+        
+                    <br>
+        
+                    <label>
+                        <input type="radio" name="type" value="2">
+                        Suggestion
+                    </label>
+        
+                </fieldset>
+        
+                <label>
+                    <input type="checkbox" name="terms">
+                    I agree to the terms and conditions
+                </label>
+        
+                <br>
+        
+                <button class="btn btn-primary">Send</button>
+
+
+
+
+
+
+            <!-- 
             <form action="https://formspree.io/f/xgebyjee" method="post" class="contact__form">
                 <div class="form__name">
                     <input type="text" name="First Name" placeholder="First Name" required>
@@ -86,9 +134,10 @@
                 <textarea name="Message" rows="7" placeholder="Message" required></textarea>
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
-           
+            -->
 
-        </div>
+        </div> 
+       
     </section>
 
 
